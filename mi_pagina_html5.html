@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página HTML5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a Mi Página HTML5</h1>
+        <nav>
+            <ul>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#contenido">Contenido Principal</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Acerca">
+            <h2>Acerca de esta Página</h2>
+            <p>Este es un ejemplo de una página web construida con <strong>HTML5</strong>, demostrando varias de sus características clave. Aquí aprenderás sobre la estructura, los elementos semánticos y cómo integrar multimedia.</p>
+            <p>Es <em>fundamental</em> entender la importancia de la semántica en el desarrollo web moderno para una mejor accesibilidad y SEO.</p>
+        </section>
+
+        <section id="contenido">
+            <h2>Contenido Principal </h2>
+            <article>
+                <h3> Ventajas de HTML5</h3>
+                <p>HTML5 trajo consigo una serie de mejoras significativas, incluyendo:</p>
+                <ol>
+                    <li>Soporte nativo para audio y video sin plugins.</li>
+                    <li>Nuevas etiquetas semánticas para una estructura de documento más clara.</li>
+                    <li>Mejoras en formularios y geolocalización.</li>
+                    <li>Mayor compatibilidad con dispositivos móviles y tablas.</li>
+                </ol>
+                <p>Además, facilitó el desarrollo de aplicaciones web interactivas.</p>
+            </article>
+
+            <article>
+                <h3>Lista de Tecnologías Complementarias</h3>
+                <p>Para crear experiencias web completas, HTML5 se complementa con:</p>
+                <ul>
+                    <li><strong>CSS3</strong> para el estilo y diseño.</li>
+                    <li><strong>JavaScript</strong> para la interactividad y lógica del lado del cliente.</li>
+                    <li>APIs web modernas para funcionalidades avanzadas.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="multimedia">
+            <h2>Nuestra Galería Multimedia</h2>
+            <h3>Imagen de Ejemplo</h3>
+            <img src="5.jpg" width="400">
+            <p>Esta es una imagen representativa para ilustrar el contenido.</p>
+
+            <h3>Video Explicativo</h3>
+            <video controls width="500">
+                <source src="Que es html.mp4" type="video/mp4">
+               
+            </video>
+            <p>Mira este video para entender mejor las funcionalidades de HTML5.</p>
+        </section>
+
+        <section>
+            <h2>Información Relevante</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Semántica</td>
+                        <td>Estructura clara y significativa.</td>
+                    </tr>
+                    <tr>
+                        <td>Multimedia</td>
+                        <td>Audio y video nativo.</td>
+                    </tr>
+                    <tr>
+                        <td>Formularios</td>
+                        <td>Nuevos tipos de entrada.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <form action="#" method="POST">
+                <p>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+                <p>
+                    <label for="correo">Correo Electrónico:</label><br>
+                    <input type="email" id="correo" name="correo" required>
+                </p>
+                <p>
+                    <button type="submit">Enviar Mensaje</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página HTML5. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
