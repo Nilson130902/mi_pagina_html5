@@ -1,0 +1,34 @@
+/* Sobrescribir color del botón primario */
+.btn-primary {
+  background-color: #82af85;
+  border-color: #0f0e0e;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(255, 87, 51, 0.4);
+}
+
+.btn-primary:hover {
+  background-color: #e04e2a;
+  transform: scale(1.05);
+}
+
+/* Animación para cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(2, 240, 34, 0.2);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 576px) {
+  body {
+    background-color: #f5f5f5;
+  }
+  h1 {
+    color: #ff5733;
+  }
+}
