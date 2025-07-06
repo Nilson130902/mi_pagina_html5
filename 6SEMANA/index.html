@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Validación</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <form id="registro-formulario">
+    <h2>Formulario de Registro</h2>
+
+    <label>Nombre:
+      <input type="text" id="nombre" required />
+      <span class="error" id="error-nombre"></span>
+    </label>
+
+    <label>Correo electrónico:
+      <input type="email" id="correo" required />
+      <span class="error" id="error-correo"></span>
+    </label>
+
+    <label>Contraseña:
+      <input type="password" id="contrasena" required />
+      <span class="error" id="error-contrasena"></span>
+    </label>
+
+    <label>Confirmar Contraseña:
+      <input type="password" id="confirmar" required />
+      <span class="error" id="error-confirmar"></span>
+    </label>
+
+    <label>Edad:
+      <input type="number" id="edad" min="18" required />
+      <span class="error" id="error-edad"></span>
+    </label>
+
+    <div class="botones">
+      <button type="submit" id="enviar" disabled>Enviar</button>
+      <button type="reset" id="reiniciar">Reiniciar</button>
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
