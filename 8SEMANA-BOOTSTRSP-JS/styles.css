@@ -1,0 +1,52 @@
+/* Estilo personalizado para el botón de alerta */
+#alertaBtn {
+    transition: all 0.3s ease;
+}
+
+#alertaBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Personalización del carrusel */
+.carousel-item {
+    height: 400px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/* Estilo para el formulario */
+#formularioContacto {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #343a40 !important;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad adicional */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 300px;
+    }
+    
+    footer .text-md-end {
+        text-align: left !important;
+        margin-top: 1rem;
+    }
+}

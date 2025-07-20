@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Bootstrap + JavaScript</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="bg-primary text-white py-4">
+        <div class="container">
+            <h1 class="text-center">Mi Proyecto Web</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#productos">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <main class="container my-5">
+        <!-- Carrusel -->
+        <section class="mb-5">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagen1.jpg" class="d-block w-100" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen2.jpg" class="d-block w-100" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen3.webp" class="d-block w-100" alt="Imagen 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Botón de alerta -->
+        <section class="text-center mb-5">
+            <button id="alertaBtn" class="btn btn-warning btn-lg">Mostrar Alerta</button>
+        </section>
+
+        <!-- Tabla de productos -->
+        <section id="productos" class="mb-5">
+            <h2 class="text-center mb-4">Nuestros Productos</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Producto</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Laptop</td>
+                            <td>Laptop de última generación</td>
+                            <td>$1200</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Smartphone</td>
+                            <td>Teléfono inteligente con cámara de 48MP</td>
+                            <td>$800</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Tablet</td>
+                            <td>Tablet con pantalla HD de 10 pulgadas</td>
+                            <td>$350</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Smartwatch</td>
+                            <td>Reloj inteligente con monitor de ritmo cardíaco</td>
+                            <td>$250</td>
+                            <td>25</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="contacto" class="mb-5">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form id="formularioContacto" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                            <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">Por favor ingresa un correo electrónico válido.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                            <div class="invalid-feedback">Por favor ingresa tu mensaje.</div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contacto</h3>
+                    <p>Email: contacto@miempresa.com</p>
+                    <p>Teléfono: +123 456 7890</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h3>Redes Sociales</h3>
+                    <a href="#" class="text-white me-2">Facebook</a>
+                    <a href="#" class="text-white me-2">Twitter</a>
+                    <a href="#" class="text-white">Instagram</a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2023 Mi Proyecto Web. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
